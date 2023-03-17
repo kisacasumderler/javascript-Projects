@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,500&display=swap");
+*, *::before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.13rem;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ec52e4, rgba(153, 102, 238, 0.8));
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 40%;
+  padding: 2rem 2.5rem;
+}
+.container #newTask {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1725490196);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container #newTask input {
+  width: 70%;
+  height: 2.8rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  border: 2px solid #d1d2d4;
+  padding: 0.6rem;
+  color: #00061f;
+  outline: none;
+  border-radius: 0.5rem;
+}
+.container #newTask input:focus {
+  border: 2px solid rgba(153, 102, 238, 0.8);
+}
+.container #newTask button {
+  width: 20%;
+  height: 2.8rem;
+  border-radius: 0.5rem;
+  background: rgba(153, 102, 238, 0.8);
+  cursor: pointer;
+  border: none;
+  border: 1px inherit #d1d2d4;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container #tasks {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  margin-top: 3.8rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1725490196);
+}
+.container #tasks .task {
+  background: #fff;
+  height: 2.8rem;
+  padding: 2rem 0;
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d1d2d4;
+  cursor: pointer;
+}
+.container #tasks .task span {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #00061f;
+}
+.container #tasks .task button {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.5rem;
+  background: #e90f3c;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+.container #tasks .completed {
+  text-decoration: line-through;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

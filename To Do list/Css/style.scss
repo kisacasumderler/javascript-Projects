@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,500&display=swap');
+
+$color1 :#ec52e4;
+$color2: #96ec;
+$color3 : #d1d2d4;
+$color4 : #00061f;
+$color5 : #e90f3c;
+$ffamily : 'Poppins', sans-serif;
+
+*,*::before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: .13rem;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, $color1,$color2);
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 40%;
+    padding: 2rem 2.5rem;
+
+    #newTask {
+        background: #fff;
+        padding: 2rem 2.5rem;
+        border-radius: .5rem;
+        box-shadow: 0 15px 30px #0000002c;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            width: 70%;
+            height: 2.8rem;
+            font-family: $ffamily;
+            font-size: .9rem;
+            border: 2px solid $color3;
+            padding: .6rem;
+            color: $color4;
+            outline: none;
+            border-radius: .5rem;
+        }
+        input:focus {
+            border: 2px solid $color2;
+        }
+        button {
+            width: 20%;
+            height: 2.8rem;
+            border-radius: .5rem;
+            background: $color2;
+            cursor: pointer;
+            border: none;
+            border: 1px inherit $color3;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    #tasks {
+        background: #fff;
+        padding: 2rem 2.5rem;
+        margin-top: 3.8rem;
+        border-radius: .8rem;
+        box-shadow: 0 15px 30px #0000002c;
+
+        .task {
+            background: #fff;
+            height: 2.8rem;
+            padding: 2rem 0;
+            margin-top: .6rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid $color3;
+            cursor: pointer;
+
+            span {
+                font-family: $ffamily;
+                font-size: .9rem;
+                font-weight: 400;
+                color: $color4;
+            }
+            button {
+                height: 2.5rem;
+                width: 2.5rem;
+                border-radius: .5rem;
+                background: $color5;
+                cursor: pointer;
+                border: none;
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+        .completed {
+            text-decoration: line-through;
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .container {
+        width: 100%;
+    }
+}
